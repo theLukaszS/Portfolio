@@ -8,7 +8,7 @@ Portfolio Website
 This repository contains the code for a portfolio website.
 
 Introduction
-This portfolio website is designed to showcase Łukasz Słaby's skills and projects as a front-end developer. It provides information about Łukasz, his skills, and a selection of his portfolio projects. The website is responsive and uses modern web technologies to create an engaging user experience.
+This portfolio website is designed to showcase my skills and projects as a front-end developer. It provides information about Łukasz, his skills, and a selection of his portfolio projects. The website is responsive and uses modern web technologies to create an engaging user experience.
 
 Technologies
 The website is built using the following technologies:
@@ -26,7 +26,7 @@ Responsive Design
 The website is designed to be responsive and adapt to different screen sizes, ensuring a seamless user experience across devices, including desktops, laptops, and mobile devices.
 
 Typewritten Animation
-The website features a typewritten animation in the header section, dynamically displaying text to introduce Łukasz Słaby.
+The website features a typewritten animation in the header section, dynamically displaying text to introduce.
 
 Skills Section
 The "My Skills" section provides information about Łukasz's skills as a front-end developer, with icons representing different technologies and languages.
