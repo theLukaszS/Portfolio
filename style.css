@@ -1,7 +1,7 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     text-decoration: none;
 }
 
@@ -16,23 +16,22 @@ body {
 }
 
 .container {
-    max-width: 1200px;
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 nav {
-    display: flex;
     align-items: center;
-    justify-content: center;
-    height: 60px;
     color: white;
-
+    display: flex;
+    height: 60px;
+    justify-content: center;
 }
 
 .menu {
     display: flex;
-    list-style: none;
     font-size: 22px;
+    list-style: none;
     text-transform: capitalize;
 }
 
@@ -49,97 +48,80 @@ nav {
     color: #fff;
 }
 
-
-
-
-
-
 .hero_section .row {
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    
     height: 40vh;
 }
 
 .col_hero_info h1 {
-    font-size: 30px;
     color: white;
+    font-size: 30px;
 }
 
 .col_hero_info span {
-    font-size: 70px;
     color: var(--secondary);
+    font-size: 70px;
 }
 
 .col_hero_info p {
-    font-size: 25px;
     color: #fff;
-    width: auto;
+    font-size: 25px;
     padding: 20px 0px;
+    width: auto;
 }
 
-
-
-
-
-
-
-
-.about_info{
+.about_info {
     padding: 30px 0px;
     position: relative;
 }
-.about_info h1{
-    font-size: 50px;
+.about_info h1 {
     color: var(--textColor);
+    font-size: 50px;
     font-weight: bold;
 }
-.about_info p{
-    padding-top:25px;
-    padding-left: 20px;
-    padding-right: 20px;
+
+.about_info p {
+    border-left: 2px solid #FFC86B;
+    color: var(--textColor);
+    font-size: 25px;
     margin-left: 15px;
     margin-right: 15px;
-    font-size: 25px;
-    color:var(--textColor);
-    border-left: 2px solid #FFC86B;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 25px;
 }
 
-
-
-#skill_section h1{
-    padding: 50px 0px;
-    text-align: center;
+#skill_section h1 {
     color:var(--textColor);
     font-size: 50px;
+    padding: 50px 0px;
+    text-align: center;
 }
-.skill_part_one{
+
+.skill_part_one {
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
 }
 
-.skill_card{
+.skill_card {
+    align-items: center;
+    background-color: #3D3E42;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     height: 160px;
-    width:180px;
-    align-items: center;
     justify-content: space-evenly;
-    background-color: #3D3E42;
-    border-radius: 20px;
-    margin:10px;
-    cursor: pointer;
+    margin: 10px;
+    width: 180px;
 }
-.skill_card:hover{
-    background-color: var(--secondary);
-    transition: 0.6s ease;
-}
-.skill_card h3{
-    font-size: 22px;
+
+.skill_card h3 {
     color: var(--textColor);
+    font-size: 22px;
 }
 
 .skill_card-img {
@@ -147,90 +129,93 @@ nav {
     width: auto;
 }
 
-
-
-#portfolio_section{
+#portfolio_section {
     padding: 30px 0px;
 }
 
-#portfolio_section h1{
+#portfolio_section h1 {
     color: #fff;
     font-size: 50px;
     text-align: center;
 }
-.portfolio_all_card{
+.portfolio_all_card {
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-evenly;
+
 }
-.portfolio_card{
-    
+.portfolio_card {
     height: auto;
     margin-top: 50px;
-    position: relative;
     max-width: 360px;
+    position: relative;
     width: 100%;
 }
+
 .portfolio_text {
-    color:white;
+    color: white;
     font-size: 22px;
     max-width: 400px;
-    text-align: center;
     padding: 0px 15px 0px 15px;
+    text-align: center;
     width: 100%;
 }
-.portfolio_card img{
-    width: 100%;
+
+.portfolio_card img {
     display: block;
     margin: auto;
-}
-.portfolio_card_info{
-    position: absolute;
     width: 100%;
-    height: 100%;
-    top:0;
-    background: rgb(0, 0, 0,0.6);
+}
+
+.portfolio_card_info {
+    align-items: center;
+    background: rgb(0, 0, 0, 0.6);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    height: 100%;
     justify-content: center;
-    padding: 0px 70px;
-    text-align: center;
     opacity: 0;
+    padding: 0px 70px;
+    position: absolute;
+    text-align: center;
+    top: 0;
     transition: 0.6s;
+    width: 100%;    
 }
-.portfolio_card_info:hover{
+
+.portfolio_card_info:hover {
     opacity: 1;
 }
+
 .portfolio_card_info>*{
     transform: translateY(25px);
     transition: transform 0.6s;
 }
+
 .portfolio_card_info:hover>*{
     transform: translateY(0px);
-    
 }
-.portfolio_card_info h2{
+
+.portfolio_card_info h2 {
     color:#fff;
     font-size: 25px;
 }
-.portfolio_card_info p{
+
+.portfolio_card_info p {
     color:#fff;
 }
-.portfolio_card_info .button{
-    width: 90px;
-    padding: 5px 10px;
-    border-radius: 10px;
+
+.portfolio_card_info .button {
     background-color: var(--secondary);
-    color:#000;
-    margin-top:5px;
+    border-radius: 10px;
+    color: #000;
+    margin-top: 5px;
+    padding: 5px 10px;
+    width: 90px;    
 }
 
-
-
 #experience_section {
-    
     padding: 80px 0px;
 }
 
@@ -242,20 +227,20 @@ nav {
 }
 
 .container {
+    align-items: center;margin: 0px auto;
     display: flex;
     flex-direction: column;
-    align-items: center;margin: 0px auto;
     text-align: center;
 }
 
 .experience_content {
-    margin-top: 15px;
     border-left: 3px solid #ffc86b;
-    padding: 0 15px 0 15px;
     margin: 0px 15px 0px 15px;
     margin-bottom: 100px;
+    margin-top: 15px;
     max-width: 800px;
-    width: 100%;
+    padding: 0 15px 0 15px;
+    width: 100%;    
 }
 
 .experience_content p {
@@ -264,113 +249,92 @@ nav {
     padding-top: 10px;
 }
 
-
-
-
-
-#contact_section{
+#contact_section {
     padding: 90px 0px;
 }
-.contact{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+
+.contact {
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    position: relative;
+    position: relative;    
 }
-.contact_title h1{
+
+.contact_title h1 {
     color:#fff;
     font-size: 50px;
     margin-top: -125px;
 }
-.contact_info{
+.contact_info {
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    align-items: center;
-    justify-content: center;
+    justify-content: center;    
 }
-.contact_info .email, .phone, .location{
+
+.contact_info .email, .phone, .location {
+    align-items: center;
+    color: var(--secondary);
     display: flex;
+    font-size: 22px;
     gap: 10px;
     height: 70px;
-    width: 350px;
-    color:var(--secondary);
-   
-    align-items: center;
     justify-content: center;
-    
-    font-size:22px;
     text-align: center;
+    width: 350px;    
 }
-.location{
+
+.location {
     margin-top: 20px;
 }
 
-
-
-
-
-.footer{
+.footer {
     background-color: #3D3E42;
-    text-align: center;
-    font-size:10px;
-    color:var(--secondary);
+    color: var(--secondary);
+    font-size: 10px;
     padding: 16px 0px;
+    text-align: center;    
 }
 
-
-@media(max-width:768px){
-    
+@media(max-width:768px) {
     .col_hero_info h1 {
         font-size: 18px;
     }
     .col_hero_info span {
         font-size: 40px;
     }
-    
-
     .about_info p{
         font-size: 20px; 
     }
-    
     .skill_part_one {
         justify-content: center;
     }
     .skill_card {
         width: 120px;
     }
-   
-
-
-.experience_content{
-    border-left: none;
-}
-.experience_contents h2::before{
-    display: none;
-}
-.experience_info{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px 30px;
-}
-.experience_info h1::after{
-    transform: rotate(270deg);
-    border-width: 20px;
-    right: 0;
-    top:35px;
-}
-.experience_info h1{
-    margin-bottom: 20px;
-}
-
-
-
-
-
-
-
+    .experience_content {
+        border-left: none;
+    }
+    .experience_contents h2::before {
+        display: none;
+    }
+    .experience_info {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 30px;
+    }
+    .experience_info h1::after {
+        border-width: 20px;
+        right: 0;
+        top: 35px;
+        transform: rotate(270deg);
+    }
+    .experience_info h1 {
+        margin-bottom: 20px;
+    }
 }
